@@ -1,0 +1,61 @@
+{
+   materials: [
+      {
+         name: "SatelliteDish_Mat",
+         parameters: [
+            {
+               baseColor: "SatelliteDish_BaseColor",
+            },
+            {
+               baseColorTint: [
+                  1,
+                  1,
+                  1,
+                  1,
+               ],
+            },
+            {
+               metallic: 0,
+            },
+            {
+               roughness: 1,
+            },
+            {
+               opacity: null,
+            },
+         ],
+         source: "build/sceneform_sdk/default_materials/obj_material.sfm",
+      },
+   ],
+   model: {
+      attributes: [
+         "Position",
+         "TexCoord",
+         "Orientation",
+      ],
+      file: "sampledata/models/satelliteDish.obj",
+      name: "satelliteDish",
+      scale: 0.015,
+      suggested_collision: {
+         center: {
+            x: 0,
+            y: 0,
+            z: 0,
+         },
+         size: {
+            x: 1,
+            y: 1,
+            z: 1,
+         },
+         type: "Box",
+      },
+   },
+   samplers: [
+      {
+         file: "sampledata/models\\SatelliteDish_BaseColor.png",
+         name: "SatelliteDish_BaseColor",
+         pipeline_name: "SatelliteDish_BaseColor.png",
+      },
+   ],
+   version: "0.51:1",
+}
